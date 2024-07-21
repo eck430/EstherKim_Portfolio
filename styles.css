@@ -12,14 +12,22 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     position: relative;
     height: 73px;
+}
+
+a{
+    text-decoration: none;
 }
 
 #name{
     font-size: 25px;
     font-weight: 300;
+}
+
+#name, #footer_cr{
+    letter-spacing: 0.1em;
 }
 
 .nav_icon{
@@ -46,21 +54,25 @@ nav{
     list-style: none;
     display: none;   
     position: absolute;
+    font-size: 22px;
+}
+
+#nav_list, #footer_list{
     color: #A60311;
     font-style: italic;
-    font-size: 22px;
+    letter-spacing: 0.05em;
 }
 
 #nav_list li{
     margin: 16px;
 }
 
-#list_icon{
+#list_icon, #footer_icon{
     display: flex;
     flex-direction: row;
 }
 
-#nav_list li, #list_icon, .nav_icon, #nav_list.active{
+#nav_list li a, #list_icon, .nav_icon, #nav_list.active{
     background-color: #fdfdfd;
 }
 
@@ -85,4 +97,46 @@ nav{
 
 #hamburger.active .ham_line:nth-child(3){
     transform: translate(0px, -9px) rotate(-45deg);
+}
+
+footer{
+    padding: 25px;
+}
+
+#footer_list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+}
+
+#footer_icon li{
+    background-color: #f2f2f2;
+    padding-right: 20px;
+}
+
+footer #name{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+#footer_list li{
+    padding-bottom: 20px;
+}
+
+#footer_cr{
+    padding-top: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ft_icon{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+#resume{
+    padding: 5px;
+    width: 100%;
 }
