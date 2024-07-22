@@ -166,12 +166,61 @@ footer #name{
 }
 
 #home_projects{
-    background-color: #e4e4e4;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 #home_proj_title{
+    font-size: 22px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    padding-bottom: 15px;
+}
+
+#home_proj_lists{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#home_projects, #home_proj_title, #home_proj_lists{
     background-color: #e4e4e4;
+}
+
+.proj_box{
+    background-color: fdfdfd;
+    width: 165px;
+    height: 165px;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.proj_box_img{
+    background-color: rgb(67, 87, 104);
+    width: 159px;
+    height: 131px;
+    margin: auto;
+}
+
+.proj_title_line, .proj_box_icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.proj_title_line{
+    width: 159px;
+    height: 19px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.proj_box_icons{
+    width: 18px;
+    height: 18px;
+    justify-content: end;
 }
 
 #resume{
