@@ -295,3 +295,62 @@ footer #name{
 #wf_link{
     margin-bottom: 8px;
 }
+
+.form, #contact_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    padding-bottom: 28px;
+}
+
+#getintouch{
+    font-size: 27px;
+}
+
+#contact_message{
+    padding-bottom: 60px;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+input, textarea{
+    border: 1px solid #58141a;
+}
+
+label{
+    padding-bottom: 8px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+input, textarea{
+    width: 341px;
+}
+
+input{
+    height: 39px;
+}
+
+textarea{
+    height: 190px;
+}
+
+.c_msg{
+    padding-top: 22px;
+}
+
+button{
+    width: 90px;
+    height: 31px;
+    margin: 10px auto;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+label, button{
+    letter-spacing: 0.1em;
+}
