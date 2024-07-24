@@ -137,11 +137,11 @@ footer #name{
     height: 22px;
 }
 
-#home_intro{
+.main_cont, #resume_title{
     padding: 20px 25px 35px;
 }
 
-#title_jr, #title_dev{
+.title{
     font-family: "Noto Serif SC", serif;
     font-weight: bold;
     font-size: 42px;
@@ -205,15 +205,22 @@ footer #name{
     margin: auto;
 }
 
+.proj_box_title{
+    font-size: 18px;
+}
+
 .proj_title_line, .proj_box_icons{
     display: flex;
     flex-direction: row;
 }
 
 .proj_title_line{
+    margin: auto;
+}
+
+.proj_title_line, #project_view, .view_links > p{
     width: 159px;
     height: 19px;
-    margin: auto;
     justify-content: space-between;
 }
 
@@ -226,4 +233,65 @@ footer #name{
 #resume{
     padding: 5px;
     width: 100%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#project{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px 35px;
+}
+
+#project_img{
+    width: 169px;
+    height: 132px;
+    background-color: rgb(52, 101, 144);
+}
+
+#project_info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+#project_title{
+    align-content: flex-start;
+}
+
+#project_title, #project_view{
+    margin: 0px 5px;
+}
+
+#project_view{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#project_des{
+    padding-top: 25px;
+}
+
+.view_links{
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.view_links p:nth-child(2){
+    text-align: right;
+}
+
+#view_links_pp{
+    flex-direction: column;
+
+}
+
+#wf_link{
+    margin-bottom: 8px;
 }
