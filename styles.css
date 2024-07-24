@@ -291,8 +291,9 @@ footer #name{
     letter-spacing: 0.1em;
 }
 
-.view_links p:nth-child(2){
+.view_links a:nth-child(2){
     text-align: right;
+    padding-left: 16px;
 }
 
 #view_links_pp{
