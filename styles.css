@@ -247,8 +247,8 @@ footer #name{
 }
 
 #project_img{
-    width: 169px;
-    height: 132px;
+    width: 172px;
+    height: 142px;
     background-color: rgb(52, 101, 144);
 }
 
@@ -272,8 +272,16 @@ footer #name{
     height: 100%;
 }
 
+#project_des_my{
+    padding-top: 10px;
+}
+
 #project_des{
-    padding-top: 25px;
+    padding-top: 18px;
+}
+
+#project_des_my, #project_des{
+    font-size: 15px;
 }
 
 .view_links{
@@ -293,7 +301,8 @@ footer #name{
 }
 
 #wf_link{
-    margin-bottom: 8px;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 .form, #contact_message{
