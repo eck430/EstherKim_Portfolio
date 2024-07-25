@@ -174,7 +174,7 @@ footer #name{
 }
 
 #home_proj_title{
-    font-size: 22px;
+    font-size: 5.5vw; /*22px;*/
     font-style: italic;
     letter-spacing: 0.05em;
     padding-bottom: 15px;
@@ -191,10 +191,18 @@ footer #name{
     background-color: #e4e4e4;
 }
 
+#home_projects{
+    padding: 6vw 25px;
+}
+
+#home_proj_title{
+    font-size: 4.6vw;
+}
+
 .proj_box{
     background-color: fdfdfd;
-    width: 165px;
-    height: 165px;
+    width: 42.5vw; /*165px;*/
+    height: 42.5vw; /*165px;*/
     margin: 5px 0px;
     display: flex;
     flex-direction: column;
@@ -202,13 +210,13 @@ footer #name{
 
 .proj_box_img{
     background-color: rgb(67, 87, 104);
-    width: 159px;
-    height: 131px;
+    width: 41vw; /*159px;*/
+    height: 34vw; /*131px;*/
     margin: auto;
 }
 
 .proj_box_title{
-    font-size: 18px;
+    font-size: 3.8vw; /*18px;*/
 }
 
 .proj_title_line, .proj_box_icons{
@@ -217,18 +225,17 @@ footer #name{
 }
 
 .proj_title_line{
-    margin: auto;
+    margin: auto auto 2vw;
 }
 
 .proj_title_line, #project_view, .view_links > p{
-    width: 159px;
-    height: 19px;
+    width: 40vw; /*159px;*/
+    height: 4vw; /*19px;*/
     justify-content: space-between;
 }
 
 .proj_box_icons{
-    width: 18px;
-    height: 18px;
+    width: 4.6vw; /*18px;*/
     justify-content: end;
 }
 
@@ -311,7 +318,7 @@ footer #name{
 .form, #contact_message{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .form{
@@ -337,9 +344,10 @@ label{
     padding-bottom: 8px;
     font-size: 17px;
     font-style: italic;
+    text-align: left;
 }
 
-input, textarea{
+input, textarea, label{
     width: 341px;
 }
 
@@ -367,7 +375,7 @@ label, button{
     letter-spacing: 0.1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
     #hamburger{
         display: none;
     }
@@ -418,12 +426,86 @@ label, button{
     #my_img{
         float: right;
         width: 38vw;
-        height: 100%;
+        height: 55vw;
     }
 
     #about{
         display: flex;
+        font-size: 2vw;
+        padding: 4vw 2.8vw 2vw 0vw;
+        text-align: right;
+    }
+
+    #home_proj_title, #getintouch{
+        font-size: 3.4vw;
+    }
+    
+    .proj_box_title, label, #contact_message{
+        font-size: 3vw;
+    }
+
+    .proj_box{
+        width: 30vw; 
+        height: 30vw;
+    }
+
+    .proj_box_img, .proj_title_line{
+        width: 29vw;
+    }
+
+    .proj_box_img{
+        height: 23.5vw; 
+    }
+
+    .proj_title_line{
+        height: 3vw; 
+    }
+
+    #contact_message{
+        margin-bottom: 4vw;
+    }
+
+    button{
         font-size: 2.4vw;
-        padding: 6vw 2.2vw 2vw 0vw;
+        width: 187px;
+        height: 56px;
+    }
+}
+
+@media (min-width: 900px) {
+    #home_proj_title{
+        font-size: 3vw;
+    }
+
+    .proj_box_title{
+        font-size: 2.4vw;
+    }
+
+    .proj_box{
+        width: 23vw; 
+        height: 23vw;
+    }
+
+    .proj_box_img, .proj_title_line{
+        width: 22.5vw; 
+    }
+
+    .proj_box_img{ 
+        height: 17.2vw; 
+    }
+
+    .proj_title_line{
+        height: 2.8vw; 
+        padding-top: 0.6vw;
+    }
+}
+
+@media (min-width: 1049px) {
+    #my_img{
+        height: 46vw;
+    }
+
+    #about{
+        padding: 4vw 3vw 2vw 6vw;
     }
 }
