@@ -269,6 +269,7 @@ footer #name{
 
 #project_title{
     align-content: flex-start;
+    z-index: 1;
 }
 
 #project_title, #project_view{
@@ -291,6 +292,7 @@ footer #name{
 
 #project_des_my, #project_des{
     font-size: 15px;
+    font-weight: 300;
 }
 
 .view_links{
@@ -307,7 +309,6 @@ footer #name{
 
 #view_links_pp{
     flex-direction: column;
-
 }
 
 #wf_link{
@@ -348,7 +349,7 @@ label{
 }
 
 input, textarea, label{
-    width: 341px;
+    width: 80vw;
 }
 
 input{
@@ -470,6 +471,102 @@ label, button{
         width: 187px;
         height: 56px;
     }
+
+    #projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #project{
+        flex-direction: column;
+    }
+
+    #project, #project_img, #project_title, #project_view{
+        width: 30vw;
+    }
+
+    #project_view{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #project_img{
+        height: 25vw;
+    }
+
+    #project_info{
+        padding: 12px 0px 0px;
+    }
+
+    #project_title{
+        margin: 0;
+    }
+
+    #project_des{
+        width: 20vw;
+    }
+
+    #project_des_my{
+        padding-top: 18px;
+        justify-content: end;
+    }
+
+    #project_des, #project_des_my{
+        font-size: 2vw;
+        height: 13vw;
+        align-self: flex-end;
+    }
+
+    .view_links{
+        flex-direction: column;
+        align-self: flex-end;
+        font-size: 1.8vw;
+        padding-bottom: 4px;
+    }
+
+    .view_links a:nth-child(1){
+        text-align: right;
+    }
+    .view_links a:nth-child(2){
+        padding-left: 0;
+    }
+
+    #wf_link{
+        margin: 0;
+        font-size: 1.7vw;
+    }
+
+    .contact_form{
+        display: flex;
+        flex-direction: row;
+    }
+
+    input, textarea, label{
+        width: 38vw;
+    }
+    
+    input{
+        height: 30px;
+    }
+    
+    textarea{
+        height: 90px;
+    }
+
+    label{
+        font-size: 2.4vw;
+    }
+
+    button{
+        width: 10vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+    #contact_message{
+        margin: 5vw 10vw;
+    }
 }
 
 @media (min-width: 900px) {
@@ -498,6 +595,10 @@ label, button{
         height: 2.8vw; 
         padding-top: 0.6vw;
     }
+
+    #project_des, #project_des_my{
+        padding-top: 25px;
+    }
 }
 
 @media (min-width: 1049px) {
@@ -507,5 +608,9 @@ label, button{
 
     #about{
         padding: 4vw 3vw 2vw 6vw;
+    }
+
+    #project_des, #project_des_my{
+        padding-top: 30px;
     }
 }
