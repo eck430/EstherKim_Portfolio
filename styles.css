@@ -20,11 +20,42 @@ nav{
 
 a{
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #A60311;
+    transition: 0.3s ease-out;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+a:hover, #home_proj_title:hover{
+    font-style: normal;
+}
+
+#hpt_a{
+    width: fit-content;
 }
 
 #name{
     font-size: 25px;
     font-weight: 300;
+    position: relative;
+}
+
+#name:hover, .proj_box_title:hover{
+    font-style: italic; 
+    letter-spacing: 0.08em;
 }
 
 #name, #footer_cr{
@@ -177,7 +208,6 @@ footer #name{
     font-size: 5.5vw; /*22px;*/
     font-style: italic;
     letter-spacing: 0.05em;
-    padding-bottom: 15px;
 }
 
 #home_proj_lists{
@@ -185,6 +215,7 @@ footer #name{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 #home_projects, #home_proj_title, #home_proj_lists{
@@ -216,7 +247,7 @@ footer #name{
 }
 
 .proj_box_title{
-    font-size: 3.8vw; /*18px;*/
+    font-size: 3.5vw; /*18px;*/
 }
 
 .proj_title_line, .proj_box_icons{
@@ -230,7 +261,7 @@ footer #name{
 
 .proj_title_line, #project_view, .view_links > p{
     width: 40vw; /*159px;*/
-    height: 4vw; /*19px;*/
+    height: 3.6vw; /*19px;*/
     justify-content: space-between;
 }
 
@@ -376,6 +407,7 @@ label, button{
     letter-spacing: 0.1em;
 }
 
+
 @media (min-width: 540px) {
     #hamburger{
         display: none;
@@ -442,7 +474,7 @@ label, button{
     }
     
     .proj_box_title, label, #contact_message{
-        font-size: 3vw;
+        font-size: 2.8vw;
     }
 
     .proj_box{
@@ -459,7 +491,7 @@ label, button{
     }
 
     .proj_title_line{
-        height: 3vw; 
+        padding-top: 5px;
     }
 
     #contact_message{
@@ -575,7 +607,7 @@ label, button{
     }
 
     .proj_box_title{
-        font-size: 2.4vw;
+        font-size: 2vw;
     }
 
     .proj_box{
@@ -593,7 +625,7 @@ label, button{
 
     .proj_title_line{
         height: 2.8vw; 
-        padding-top: 0.6vw;
+        margin-bottom: 1.6vw;
     }
 
     #project_des, #project_des_my{
