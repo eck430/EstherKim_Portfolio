@@ -43,7 +43,7 @@ a:hover, #home_proj_title:hover{
     font-style: normal;
 }
 
-#hpt_a{
+#hpt_a, #wf_link{
     width: fit-content;
 }
 
@@ -53,9 +53,13 @@ a:hover, #home_proj_title:hover{
     position: relative;
 }
 
-#name:hover, .proj_box_title:hover{
+#name:hover, .proj_box_title:hover, button:hover{
     font-style: italic; 
     letter-spacing: 0.08em;
+}
+
+#name:hover, a:hover, button:hover{
+    font-weight: 500;
 }
 
 #name, #footer_cr{
@@ -66,6 +70,18 @@ a:hover, #home_proj_title:hover{
     display: block;
     width: 25px;
     height: 25px;
+    transition: transform 0.3s;
+}
+
+#list_icon a:hover::after, #footer_icon a:hover::after{
+    width: 0px;
+}
+
+.nav_icon:hover, .ft_icon:hover{
+    transform: rotate(0deg);
+    width: 25.5px;
+    height: 25.5px;
+    animation: tilt 0.5s;
 }
 
 #hamburger{
@@ -148,8 +164,11 @@ footer{
 }
 
 footer #name{
-    padding-bottom: 30px;
     font-size: 20px;
+}
+
+footer ul{
+    padding-top: 30px;
 }
 
 #footer_list li{
@@ -313,15 +332,11 @@ footer #name{
     height: 100%;
 }
 
-#project_des_my{
-    padding-top: 10px;
-}
-
 #project_des{
     padding-top: 18px;
 }
 
-#project_des_my, #project_des{
+#project_des{
     font-size: 15px;
     font-weight: 300;
 }
@@ -331,20 +346,7 @@ footer #name{
     flex-direction: row;
     font-style: italic;
     letter-spacing: 0.1em;
-}
-
-.view_links a:nth-child(2){
-    text-align: right;
-    padding-left: 16px;
-}
-
-#view_links_pp{
-    flex-direction: column;
-}
-
-#wf_link{
-    padding-top: 5px;
-    margin-bottom: 5px;
+    justify-content: space-between;
 }
 
 .form, #contact_message{
@@ -407,6 +409,18 @@ label, button{
     letter-spacing: 0.1em;
 }
 
+button:hover{
+    width: 91px;
+    height: 34px;
+    background-color: #A60311;
+    color: white;
+}
+
+@keyframes tilt{
+    100%{
+        transform: rotate(-10deg);
+    }
+}
 
 @media (min-width: 540px) {
     #hamburger{
@@ -500,7 +514,7 @@ label, button{
 
     button{
         font-size: 2.4vw;
-        width: 187px;
+        width: 100vw;
         height: 56px;
     }
 
@@ -544,7 +558,7 @@ label, button{
         justify-content: end;
     }
 
-    #project_des, #project_des_my{
+    #project_des{
         font-size: 2vw;
         height: 13vw;
         align-self: flex-end;
@@ -554,24 +568,18 @@ label, button{
         flex-direction: column;
         align-self: flex-end;
         font-size: 1.8vw;
-        padding-bottom: 4px;
+        padding-bottom: 2px;
     }
 
-    .view_links a:nth-child(1){
+    .view_links a{
         text-align: right;
-    }
-    .view_links a:nth-child(2){
-        padding-left: 0;
-    }
-
-    #wf_link{
-        margin: 0;
-        font-size: 1.7vw;
+        padding: 2px 0px;
     }
 
     .contact_form{
         display: flex;
         flex-direction: row;
+        margin: 25px;
     }
 
     input, textarea, label{
@@ -591,7 +599,7 @@ label, button{
     }
 
     button{
-        width: 10vw;
+        width: 14vw;
         height: 5vw;
         font-size: 2vw;
     }
@@ -631,6 +639,37 @@ label, button{
     #project_des, #project_des_my{
         padding-top: 25px;
     }
+
+    input, textarea, label{
+        width: 30vw;
+    }
+    
+    input{
+        height: 28px;
+    }
+
+    label{
+        font-size: 1.6vw;
+    }
+
+    button{
+        width: 10vw;
+        height: 3.6vw;
+        font-size: 1.6vw;
+    }
+
+    button:hover{
+        width: 10.2vw;
+        height: 3.65vw;
+    }
+
+    #getintouch{
+        font-size: 2.8vw;
+    }
+    
+    #contact_message{
+        font-size: 1.8vw;
+    }
 }
 
 @media (min-width: 1049px) {
@@ -644,5 +683,28 @@ label, button{
 
     #project_des, #project_des_my{
         padding-top: 30px;
+    }
+
+    label{
+        font-size: 1.2vw;
+    }
+
+    button{
+        width: 8.8vw;
+        height: 3.2vw;
+        font-size: 1.2vw;
+    }
+
+    button:hover{
+        width: 9vw;
+        height: 3.32vw;
+    }
+
+    #getintouch{
+        font-size: 2.4vw;
+    }
+    
+    #contact_message{
+        font-size: 1.4vw;
     }
 }
