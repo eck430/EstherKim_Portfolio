@@ -43,7 +43,7 @@ a:hover, #home_proj_title:hover{
     font-style: normal;
 }
 
-#hpt_a, #wf_link{
+#hpt_a{
     width: fit-content;
 }
 
@@ -73,7 +73,7 @@ a:hover, #home_proj_title:hover{
     transition: transform 0.3s;
 }
 
-#list_icon a:hover::after, #footer_icon a:hover::after{
+#list_icon a:hover::after, #footer_icon a:hover::after, #project_img:hover::after, .proj_box a:hover::after{
     width: 0px;
 }
 
@@ -258,11 +258,19 @@ footer ul{
     flex-direction: column;
 }
 
+#proj_img_a{
+    margin: auto;
+}
+
 .proj_box_img{
-    background-color: rgb(67, 87, 104);
+    object-position: 50% 0%;
     width: 41vw; /*159px;*/
     height: 34vw; /*131px;*/
     margin: auto;
+}
+
+.proj_box_img, #project_img{
+    object-fit: cover;
 }
 
 .proj_box_title{
@@ -308,7 +316,6 @@ footer ul{
 #project_img{
     width: 172px;
     height: 142px;
-    background-color: rgb(52, 101, 144);
 }
 
 #project_info{
