@@ -8,6 +8,38 @@
     background-color: #f2f2f2;
 }
 
+main{
+    animation: fade 1.2s ease;
+}
+
+.title{
+    animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes tilt{
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+/* nav bar + hamburger */
 nav{
     display: flex;
     justify-content: space-between;
@@ -73,7 +105,10 @@ a:hover, #home_proj_title:hover{
     transition: transform 0.3s;
 }
 
-#list_icon a:hover::after, #footer_icon a:hover::after, #project_img:hover::after, .proj_box a:hover::after{
+#list_icon a:hover::after, 
+#footer_icon a:hover::after, 
+.project_img:hover::after, 
+.proj_box a:hover::after{
     width: 0px;
 }
 
@@ -147,6 +182,7 @@ a:hover, #home_proj_title:hover{
     transform: translate(0px, -9px) rotate(-45deg);
 }
 
+/* footer */
 footer{
     padding: 25px;
 }
@@ -191,6 +227,7 @@ footer ul{
     padding: 20px 25px 35px;
 }
 
+/* index.html */
 .title{
     font-family: "Noto Serif SC", serif;
     font-weight: bold;
@@ -269,15 +306,15 @@ footer ul{
     margin: auto;
 }
 
-.proj_box_img, #project_img{
+.proj_box_img, .project_img{
     opacity: 0.7;
 }
 
-.proj_box_img:hover, #project_img:hover{
+.proj_box_img:hover, .project_img:hover{
     opacity: 1;
 }
 
-.proj_box_img, #project_img{
+.proj_box_img, .project_img{
     object-fit: cover;
 }
 
@@ -294,7 +331,7 @@ footer ul{
     margin: auto auto 2vw;
 }
 
-.proj_title_line, #project_view, .view_links > p{
+.proj_title_line, .project_view, .view_links > p{
     width: 40vw; /*159px;*/
     height: 3.6vw; /*19px;*/
     justify-content: space-between;
@@ -305,53 +342,52 @@ footer ul{
     justify-content: end;
 }
 
+/* resume.html */
 #resume{
-    padding: 5px;
+    padding: 25px;
     width: 100%;
 }
 
+/* projects.html */
 #projects{
     display: flex;
     flex-direction: column;
 }
 
-#project{
+.project{
     display: flex;
     flex-direction: row;
     padding: 20px 0px 35px;
 }
 
-#project_img{
+.project_img{
     width: 172px;
     height: 142px;
 }
 
-#project_info{
+.project_info{
     display: flex;
     flex-direction: column;
     padding-left: 5px;
 }
 
-#project_title{
+.proj_title_line.project_title{
     align-content: flex-start;
     z-index: 1;
 }
 
-#project_title, #project_view{
+.proj_title_line.project_title, .project_view{
     margin: 0px 5px;
 }
 
-#project_view{
+.project_view{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-#project_des{
+.project_des{
     padding-top: 18px;
-}
-
-#project_des{
     font-size: 15px;
     font-weight: 300;
 }
@@ -364,6 +400,7 @@ footer ul{
     justify-content: space-between;
 }
 
+/* contact.html */
 .form, #contact_message{
     display: flex;
     flex-direction: column;
@@ -429,12 +466,6 @@ button:hover{
     height: 34px;
     background-color: #A60311;
     color: white;
-}
-
-@keyframes tilt{
-    100%{
-        transform: rotate(-10deg);
-    }
 }
 
 @media (min-width: 540px) {
@@ -539,32 +570,32 @@ button:hover{
         justify-content: space-between;
     }
 
-    #project{
+    .project{
         flex-direction: column;
     }
 
-    #project, #project_img, #project_title, #project_view{
+    .project, .project_img, .proj_title_line.project_title, .project_view{
         width: 30vw;
     }
 
-    #project_view{
+    .project_view{
         flex-direction: row;
         margin: 0;
     }
 
-    #project_img{
+    .project_img{
         height: 25vw;
     }
 
-    #project_info{
+    .project_info{
         padding: 12px 0px 0px;
     }
 
-    #project_title{
+    .proj_title_line.project_title{
         margin: 0;
     }
 
-    #project_des{
+    .project_des{
         width: 20vw;
     }
 
@@ -573,7 +604,7 @@ button:hover{
         justify-content: end;
     }
 
-    #project_des{
+    .project_des{
         font-size: 2vw;
         height: 13vw;
         align-self: flex-end;
@@ -651,7 +682,7 @@ button:hover{
         margin-bottom: 1.6vw;
     }
 
-    #project_des, #project_des_my{
+    .project_des, #project_des_my{
         padding-top: 25px;
     }
 
@@ -696,7 +727,7 @@ button:hover{
         padding: 4vw 3vw 2vw 6vw;
     }
 
-    #project_des, #project_des_my{
+    .project_des, #project_des_my{
         padding-top: 30px;
     }
 
