@@ -12,33 +12,6 @@ main{
     animation: fade 1.2s ease;
 }
 
-.title{
-    animation: slideIn 0.8s ease-in-out;
-}
-
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes slideIn{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-@keyframes tilt{
-    100%{
-        transform: rotate(-10deg);
-    }
-}
-
 /* nav bar + hamburger */
 nav{
     display: flex;
@@ -233,6 +206,7 @@ footer ul{
     font-weight: bold;
     font-size: 10.9vw; /*42px;*/
     padding-bottom: 20px;
+    animation: slideIn 0.8s ease-in-out;
 }
 
 #title_dev{
@@ -466,6 +440,29 @@ button:hover{
     height: 34px;
     background-color: #A60311;
     color: white;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes tilt{
+    100%{
+        transform: rotate(-10deg);
+    }
 }
 
 @media (min-width: 540px) {
