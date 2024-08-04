@@ -17,39 +17,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    padding-top: 40px;
+    padding: 40px 25px 25px;
     position: relative;
     height: 73px;
-}
-
-a{
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background-color: #A60311;
-    transition: 0.3s ease-out;
-}
-
-a:hover::after, .proj_box_title:hover::after{
-    width: 100%;
-}
-
-a:hover, #home_proj_title:hover{
-    font-style: normal;
-}
-
-#hpt_a{
-    width: fit-content;
 }
 
 #name{
@@ -153,6 +123,39 @@ a:hover, #home_proj_title:hover{
 
 #hamburger.active .ham_line:nth-child(3){
     transform: translate(0px, -9px) rotate(-45deg);
+}
+
+body.active{
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #A60311;
+    transition: 0.3s ease-out;
+}
+
+a:hover::after, .proj_box_title:hover::after{
+    width: 100%;
+}
+
+a:hover, #home_proj_title:hover{
+    font-style: normal;
+}
+
+#hpt_a{
+    width: fit-content;
 }
 
 /* footer */
