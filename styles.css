@@ -150,11 +150,11 @@ a:hover::after, .proj_box_title:hover::after{
     width: 100%;
 }
 
-a:hover, #home_proj_title:hover{
+a:hover, .hpt_a:hover{
     font-style: normal;
 }
 
-#hpt_a{
+.hpt_a{
     width: fit-content;
 }
 
@@ -206,14 +206,15 @@ footer ul{
 /* index.html */
 .title{
     font-family: "Noto Serif SC", serif;
-    font-weight: bold;
-    font-size: 10.9vw; /*42px;*/
-    padding-bottom: 20px;
+    font-size: 6vw;
     animation: slideIn 0.8s ease-in-out;
+    text-align: left;
 }
 
-#title_dev{
-    letter-spacing: 0.21em;
+#title_pm{
+    letter-spacing: 0.08em;
+    padding-bottom: 20px;
+    text-align: right;
 }
 
 #my_img{
@@ -221,14 +222,20 @@ footer ul{
     height: 390px;
     object-fit: cover;
     object-position: 0% 70%;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     display: block;
     margin: auto;
+    border-radius: 15%;
 }
 
 #about{
-    font-size: 20px;
-    padding-top: 12px;
+    font-size: 15px;
+    padding: 12px;
+    text-align: center;
+}
+
+.home_cs_list{
+    margin-bottom: 10vw;
 }
 
 #home_projects{
@@ -237,7 +244,7 @@ footer ul{
     flex-direction: column;
 }
 
-#home_proj_title{
+.hpt_a{
     font-size: 5.5vw; /*22px;*/
     font-style: italic;
     letter-spacing: 0.05em;
@@ -251,7 +258,7 @@ footer ul{
     padding-top: 15px;
 }
 
-#home_projects, #home_proj_title, #home_proj_lists{
+#home_projects, .home_proj_title, #home_proj_lists{
     background-color: #e4e4e4;
 }
 
@@ -259,7 +266,7 @@ footer ul{
     padding: 6vw 25px;
 }
 
-#home_proj_title{
+.hpt_a{
     font-size: 4.6vw;
 }
 
@@ -499,37 +506,46 @@ button:hover{
         margin-top: 30px;
     }
 
-    #title_jr{
+    #title_a{
         position: absolute;
         background-color: rgba(255, 255, 255, 0);
-        letter-spacing: 0.1em;
+        letter-spacing: 0.01em;
+        padding: 0px;
     }
 
-    #title_dev{
-        margin-top: 10vw;
-        letter-spacing: 0.08em;
+    #title_pm{
+        margin-top: 6vw;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    #title_a, #title_pm{
+        text-align: center;
+        margin-left: 12vw;
     }
 
     .title{
-        font-size: 7vw;
+        font-size: 5vw;
         display: flex;
         flex-direction: column;
     }
 
     #my_img{
-        float: right;
-        width: 38vw;
-        height: 55vw;
+        float: left;
+        width: 40vw;
+        height: 52vw;
+        border-radius: 5%;
+        margin-left: 10vw;
     }
 
     #about{
         display: flex;
         font-size: 2vw;
-        padding: 4vw 2.8vw 2vw 0vw;
-        text-align: right;
+        text-align: center;
+        padding: 14vw 3vw;
     }
 
-    #home_proj_title, #getintouch{
+    .hpt_a, #getintouch{
         font-size: 3.4vw;
     }
     
@@ -656,7 +672,7 @@ button:hover{
 }
 
 @media (min-width: 900px) {
-    #home_proj_title{
+    .hpt_a{
         font-size: 3vw;
     }
 
@@ -720,11 +736,12 @@ button:hover{
 
 @media (min-width: 1049px) {
     #my_img{
-        height: 46vw;
+        height: 48vw;
     }
 
     #about{
-        padding: 4vw 3vw 2vw 6vw;
+        padding: 15vw 2vw 0vw;
+        font-size: 1.6vw;
     }
 
     .project_des, #project_des_my{
