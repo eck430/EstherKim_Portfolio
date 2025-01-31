@@ -250,7 +250,7 @@ footer ul{
     letter-spacing: 0.05em;
 }
 
-#home_proj_lists{
+.home_proj_lists{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -258,7 +258,7 @@ footer ul{
     padding-top: 15px;
 }
 
-#home_projects, .home_proj_title, #home_proj_lists{
+#home_projects, .home_proj_title, .home_proj_lists{
     background-color: #e4e4e4;
 }
 
@@ -270,6 +270,10 @@ footer ul{
     font-size: 4.6vw;
 }
 
+#projproj{
+    padding-top: 35px;
+}
+
 .proj_box{
     background-color: fdfdfd;
     width: 42.5vw; /*165px;*/
@@ -279,8 +283,8 @@ footer ul{
     flex-direction: column;
 }
 
-#proj_img_a{
-    margin: auto;
+.proj_img_a{
+    margin: 5px;
 }
 
 .proj_box_img{
@@ -328,14 +332,34 @@ footer ul{
 
 /* resume.html */
 #resume{
-    padding: 25px;
+    padding: 0px 25px;
     width: 100%;
+}
+
+.job ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 25px;
+}
+
+.job li{
+    padding: 10px 0px;
+    color: #3d0106;
+}
+
+.edu{
+    padding: 25px 0px;
 }
 
 /* projects.html */
 #projects{
     display: flex;
     flex-direction: column;
+}
+
+#proj_pg_des{
+    padding: 24px 0px;
 }
 
 .project{
@@ -566,6 +590,10 @@ button:hover{
         height: 23.5vw; 
     }
 
+    .proj_img_a{
+        margin: 5px;
+    }
+
     .proj_title_line{
         padding-top: 5px;
     }
@@ -690,7 +718,8 @@ button:hover{
     }
 
     .proj_box_img{ 
-        height: 17.2vw; 
+        height: 22vw; 
+        width: 30vw;
     }
 
     .proj_title_line{
