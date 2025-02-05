@@ -243,6 +243,7 @@ footer ul{
     padding: 25px;
     display: flex;
     flex-direction: column;
+    padding: 6vw 25px;
 }
 
 .hpt_a{
@@ -261,10 +262,6 @@ footer ul{
 
 #home_projects, .home_proj_title, .home_proj_lists{
     background-color: #e4e4e4;
-}
-
-#home_projects{
-    padding: 6vw 25px;
 }
 
 .hpt_a{
@@ -409,6 +406,19 @@ footer ul{
     justify-content: space-between;
 }
 
+/* casestudies */
+#cs_subtitle{
+    padding-top: 25px;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+#youtube_cs{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
 /* contact.html */
 .form, #contact_message{
     display: flex;
