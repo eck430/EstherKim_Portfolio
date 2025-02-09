@@ -275,7 +275,7 @@ footer ul{
 .proj_box{
     background-color: fdfdfd;
     width: 42.5vw; /*165px;*/
-    height: 42.5vw; /*165px;*/
+    height: 40.5vh; /*165px;*/
     margin: 5px 0px;
     display: flex;
     flex-direction: column;
@@ -283,9 +283,12 @@ footer ul{
 
 .proj_box_img{
     object-position: 50% 0%;
-    width: 41vw; /*159px;*/
-    height: 34vw; /*131px;*/
     margin: auto;
+}
+
+.proj_box_img, #home_cs_img{
+    width: 41vw; /*159px;*/
+    height: 22vh; /*131px;*/
 }
 
 .proj_box_img, .project_img{
@@ -315,7 +318,7 @@ footer ul{
 
 .proj_title_line, .project_view, .view_links > p{
     width: 40vw; /*159px;*/
-    height: 3.6vw; /*19px;*/
+    height: 3.6vh; /*19px;*/
     justify-content: space-between;
 }
 
@@ -611,8 +614,9 @@ button:hover{
         width: 29vw;
     }
 
-    .proj_box_img{
-        height: 23.5vw; 
+    .proj_box_img, #home_cs_img{
+        width: 30vw;
+        height: 24vh; 
     }
 
     .proj_img_a{
@@ -738,13 +742,8 @@ button:hover{
         height: 23vw;
     }
 
-    .proj_box_img, .proj_title_line{
+    .proj_title_line{
         width: 22.5vw; 
-    }
-
-    .proj_box_img{ 
-        height: 22vw; 
-        width: 30vw;
     }
 
     .proj_title_line{
@@ -823,5 +822,10 @@ button:hover{
     
     #contact_message{
         font-size: 1.4vw;
+    }
+
+    .proj_box_img, #home_cs_img{
+        width: 28vw;
+        height: 28.5vh; 
     }
 }
