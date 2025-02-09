@@ -287,8 +287,8 @@ footer ul{
 }
 
 .proj_box_img, #home_cs_img{
-    width: 41vw; 
-    height: 16vh; 
+    width: 42.8vw; 
+    height: 14.2vh; 
 }
 
 .proj_box_img, .project_img{
@@ -615,8 +615,8 @@ button:hover{
     }
 
     .proj_box_img, #home_cs_img{
-        width: 30vw;
-        height: 24vh; 
+        width: 28.3vw;
+        height: 16vh; 
     }
 
     .proj_img_a{
@@ -728,7 +728,7 @@ button:hover{
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
     .hpt_a{
         font-size: 3vw;
     }
@@ -740,6 +740,10 @@ button:hover{
     .proj_box{
         width: 23vw; 
         height: 23vw;
+    }
+
+    .proj_box_img, #home_cs_img{
+        width: 29.8vw;
     }
 
     .proj_title_line{
@@ -787,7 +791,7 @@ button:hover{
     }
 }
 
-@media (min-width: 1049px) {
+@media (min-width: 1024px) {
     #my_img{
         height: 48vw;
     }
