@@ -222,7 +222,7 @@ footer ul{
     width: 340px;
     height: 390px;
     object-fit: cover;
-    object-position: 0% 70%;
+    /*object-position: 0% 50%;*/
     padding-bottom: 10px;
     display: block;
     margin: auto;
@@ -610,7 +610,7 @@ button:hover{
         height: 30vw;
     }
 
-    .proj_box_img, .proj_title_line{
+    .proj_title_line{
         width: 29vw;
     }
 
