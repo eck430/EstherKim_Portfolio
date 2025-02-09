@@ -287,8 +287,8 @@ footer ul{
 }
 
 .proj_box_img, #home_cs_img{
-    width: 41vw; /*159px;*/
-    height: 22vh; /*131px;*/
+    width: 41vw; 
+    height: 16vh; 
 }
 
 .proj_box_img, .project_img{
